@@ -5,20 +5,27 @@ FoodForward is a revolutionary web application dedicated to reducing food wastag
 
 # Key Features
 
-User-Friendly Interface: 
-The intuitive user interface of FoodConnect makes it easy for restaurants to upload details about surplus food and for NGOs or individuals to request or claim available food items.
+**User-Friendly Interface:** 
+The intuitive user interface of FoodForward makes it easy for restaurants to upload details about surplus food and for NGOs or individuals to request or claim available food items.
+
+**Verification of organizations:** 
+At FoodForward, we verify the authenticity and credibility of restaurants and NGOs participating in our platform through a streamlined verification process.
+
+**Community building**
+
+**Immediate emails to the organizations for recieving food**
 
 # Target Audience
 
- Restaurants with surplus food looking to donate excess food responsibly.
+Restaurants with surplus food looking to donate excess food responsibly.
 Non-governmental organizations dedicated to distributing food to the needy.
 
 ## Authors
 
 
-- [@prithviireddy](https://github.com/prithviireddy)
+- [@98493255](https://github.com/98493255)
 
-- [@prithviireddy](https://github.com/prithviireddy)
+- [@Sathya-reddy1658](https://github.com/Sathya-reddy1658)
 
 - [@prithviireddy](https://github.com/prithviireddy)
 
@@ -41,7 +48,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd [projectdirectory]
+  code -r WEBHACK1-Project
 ```
 
 
@@ -81,19 +88,3 @@ Run the following command:
 ```bash
 npx nodemon
 ```
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
-
-# Hi, I'm Sathya! 👋
-
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
