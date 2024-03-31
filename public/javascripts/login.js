@@ -1,30 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.card');
-  
-    gsap.from(cards, {
-      duration: 1,
-      opacity: 0,
-      y: 50,
-      stagger: 0.3,
-      scale: 0.8,
-      ease: "power3.out",
-      delay: 0.5
-    });
-  
-    const btn1 = document.getElementById("btn1");
+const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
-   
+    const txt1 = document.getElementById("text1");
+    const txt2 = document.getElementById("text2");
+    const txt3 = document.getElementById("text3"); 
+   const head = document.getElementById("head");
   
     btn1.addEventListener("click", function(event) {
       event.preventDefault();
-    //   btn1.style.backgroundColor = "blue";
-    //   btn2.style.backgroundColor = "";
+      btn1.style.backgroundColor = "#0bdd12";
+      btn1.style.color="white";
+      btn2.style.color="black";
+      head.innerText="logging in as Donor";
+      head.style.color="#0bdd12";
+      btn2.style.backgroundColor = "";
+      txt1.innerText="What NGO gets ";
+      txt2.innerText="We help them by providing resources ";
+      txt3.innerText="We help them to help others ";
+
+  
     });
   
     btn2.addEventListener("click", function(event) {
       event.preventDefault();
-    //   btn2.style.backgroundColor = "blue";
-    //   btn1.style.backgroundColor = "";
+      btn1.style.color="black";
+      btn2.style.color="white";
+      head.innerText="logging in as NGO";
+      btn1.style.backgroundColor = "";
+      head.style.color="#0bdd12";
+      btn2.style.backgroundColor = "#0bdd12";
+      txt1.innerText="What Restaurants get";
+      txt2.innerText="Community support  ";
+      txt3.innerText="Organic marketing and Tax exemption";
+     
     });
-  });
-  
