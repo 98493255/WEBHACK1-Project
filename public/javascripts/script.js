@@ -70,10 +70,6 @@ tl.from("#nav ,#navpart-2 h1,#navpart-3",{
     stagger:0.2,
 })
 
-tl.from("#hero #right img",{
-    scale:0,
-    opacity:0,
-})
 
 tl.to('#page2 #scroll h1 span', {
     color: 'red',
@@ -112,3 +108,12 @@ tl.from("#page3 .testimonial-container",{
         end: "top 40%"
 }
 })
+tl.to("#donate",{
+
+    scaleX: 1.2, 
+     scaleY: 1.2, 
+      duration: 0.5,
+    repeat: -1,  
+    yoyo:true
+})
+

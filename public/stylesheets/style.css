@@ -137,6 +137,8 @@ a:hover {
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: 27px;
+margin-top: 43px;
 }
 
 .ri-heart-fill {
@@ -200,7 +202,8 @@ a:hover {
 }
 
 #page1half {
-  height: 30vh;
+  margin-top: 100px;
+  height: 79vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -232,7 +235,7 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  height: 15vw;
+  height: 17vw;
   max-width: 400px;
   width: 100%;
   margin-right: 2vw;
@@ -241,7 +244,7 @@ a:hover {
 
 .people {
   display: flex;
-  gap: 20px;
+  gap: 150px;
 }
 
 .people .person {
@@ -256,11 +259,13 @@ a:hover {
 }
 
 .people .person img {
-  height: 70%;
-  width: 100%;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
   object-position: center;
   border-radius: 50%;
+  border: 1px solid grey;
+  margin-bottom: 30px;
 }
 
 .testimonial-header {
@@ -412,4 +417,205 @@ a:hover {
   align-content: space-around;
   align-items: center;
   justify-content: center;
+}
+#goals{
+  margin-top: 45px;
+  height: 74%;
+  width: 80%;
+  background-color: #afff19;
+  font-size: 42px;
+  padding: 36px;
+  border-radius: 10px;
+}
+#info{
+   
+  font-weight: bolder;
+}
+#donate_btn{
+  margin-top: 60px;
+  padding: 31px;
+  height: 114%;
+  width: 60%;
+  background-color: bisque;
+  font-size: 23px;
+  border-radius: 10px;
+  
+}
+#main_button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container {
+  margin-top: 160px;
+  background-color: #0c4d6e;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  top: 15px;
+  left: 41px;
+}
+.goals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  margin-right: 29px;
+}
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fcd116;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.zero-hunger {
+  background-image: url('https://globalgoalscms.co.uk/wp-content/uploads/2021/09/2.png');
+}
+.quality-education {
+  background-image: url('https://th.bing.com/th/id/OIP.z-QkCWWGz1ujTn2huuJZgwHaGL?rs=1&pid=ImgDetMain');
+}
+.no-poverty {
+  background-image: url('https://th.bing.com/th/id/OIP.ZZUiO1mLNj3DYLj7CB6WQwHaE9?rs=1&pid=ImgDetMain');
+}
+.good-health {
+  background-image: url('https://www.logolynx.com/images/logolynx/s_d4/d4931fbc228a479b502bf86ef790ddc1.jpeg');
+}
+.gender-equality {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/003/421/786/original/men-and-women-symbol-gender-equality-symbol-vector.jpg');
+}
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.program-container {
+  margin-top: 120px;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(91, 69, 69, 0.721);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.program-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.program-value {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+.swiper {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Progress bar styles */
+.swiper-progressbar {
+  background: rgba(255, 255, 255, 0.5);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 999;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.swiper-progressbar-fill {
+  background: #007aff;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007aff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.slideno {
+  margin-left: 4vw;
+  color: white;
 }

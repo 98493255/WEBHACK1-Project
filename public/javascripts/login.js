@@ -17,7 +17,6 @@ const btn1 = document.getElementById("btn1");
       org.setAttribute("placeholder", "NGO name (as per records)");
       head.innerText="logging in as NGO";
       head.style.color="#0bdd12";
-    
       btn2.style.backgroundColor = "";
       txt1.innerText="What NGO gets ";
       txt2.innerText="We help them by providing resources ";
