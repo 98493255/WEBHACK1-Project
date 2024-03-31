@@ -25,15 +25,14 @@
             <h1 id="contact" onclick="redirectToContact()">Contact</h1>
           </div>
           <div id="navpart-3">
-            <button
-              id="donate"
-              style="padding: 1vh 3vw; text-align: center; width: fit-content"
-              onclick="redirectToDonate()"
-            >
+            <button id="donate" style="padding: 1vh 3vw; text-align: center; width: fit-content" onclick="redirectToDonate()">
               <i class="ri-heart-fill"></i>Donate
             </button>
-            <img src="../images/login.png" onclick="redirectToPartner()">
-            <!-- <h1 id="partner" onclick="redirectToPartner()"></h1> -->
+            <% if(!loggedIn) { %>
+                <img src="../images/login.png" onclick="redirectToLogin()">
+            <% } else { %>
+                <a href="/logout">Logout</a>
+            <% } %>
           </div>
         </div>
         <div id="hero">
@@ -70,55 +69,55 @@
       </div>
       <div id="page3">
         <div id="cards_1">
-        <div class="testimonial-container">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">largest FSN platform</div>
-              <div class="testimonial-company">FastForward is the largest FSN</div>
+          <div class="testimonial-container">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">largest FSN platform</div>
+                <div class="testimonial-company">FastForward is the largest FSN</div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              "Currently , FoodForward is the largest FSN , which is distributing over 10-12 Tons of left-over food to restaurants"
             </div>
           </div>
-          <div class="testimonial-text">
-            "Currently , FoodForward is the largest FSN , which is distributing over 10-12 Tons of left-over food to restaurants"
-          </div>
-        </div>
-        <div class="testimonial-container">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">1500+ restaurants</div>
-              <div class="testimonial-company">donation average : 4 tons </div>
+          <div class="testimonial-container">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">1500+ restaurants</div>
+                <div class="testimonial-company">donation average : 4 tons </div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              "More than 1500 restaurants are partnered and serving around 10,000-15000 needy ones."
             </div>
           </div>
-          <div class="testimonial-text">
-            "More than 1500 restaurants are partnered and serving around 10,000-15000 needy ones."
-          </div>
-        </div>
-        <div class="testimonial-container">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">10,000,000+ meals served</div>
-              <div class="testimonial-company">and still counting....</div>
+          <div class="testimonial-container">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">10,000,000+ meals served</div>
+                <div class="testimonial-company">and still counting....</div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              "FoodForward has helped in providing a total of 10,000,000 meals till the establishment."
             </div>
           </div>
-          <div class="testimonial-text">
-            "FoodForward has helped in provind a total of 10,000,000 meals till the establishment."
-          </div>
-        </div>
-        <div class="testimonial-container">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar"></div>
-            <div>
-              <div class="testimonial-name">Labour reduction</div>
-              <div class="testimonial-company">around 4000 workers lessens</div>
+          <div class="testimonial-container">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name">Labour reduction</div>
+                <div class="testimonial-company">around 4000 workers lessens</div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              "Since the food which was about to be wasted is now being distributed so it results in reduced garbage."
             </div>
           </div>
-          <div class="testimonial-text">
-            "Since the food which was about to be wated is now being distributed so it results in reduced garbage ."
-          </div>
         </div>
-      </div>
       </div>
       <footer>
         <div class="container">
@@ -193,7 +192,10 @@
       function redirectToPartner() {
         window.location.href = "/partner";
       }
+      function redirectToLogin() {
+        window.location.href = "/login";
+      }
     </script>
     <script src="../javascripts/script.js"></script>
- </body>
+  </body>
 </html>
