@@ -60,17 +60,18 @@ html, body {
 }
 
 #navpart-2 h1 {
-  font-size: 2.5vh;
+  font-size: 3vh;
   cursor: pointer;
 }
 
 footer {
-  background-color: #3c3c3c;
+  background-color: #333;
   color: #fff;
-  padding: 30px 0;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.container {
+.footcontainer {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -80,37 +81,122 @@ footer {
 
 .left, .middle, .right {
   flex: 1;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
 }
 
-p {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
 
 form {
   display: flex;
+  margin-top: 15px;
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Progress bar styles */
+.swiper-progressbar {
+  background: rgba(255, 255, 255, 0.5);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 999;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.swiper-progressbar-fill {
+  background: #007aff;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007aff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.slideno {
+  margin-left: 4vw;
+  color: white;
+}
+
+
 input[type="email"] {
-  width: 70%;
+  width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 button {
-  width: 30%;
-  background-color: #ff5722;
+  background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
+  padding: 10px 15px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 ul {
@@ -119,17 +205,20 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #007bff;
   text-decoration: underline;
 }
+
 
 #donate {
   background-color: #4DB748;
@@ -146,18 +235,18 @@ a:hover {
 }
 
 #navpart-2 h1:hover {
-  text-decoration: underline;
   color: #4DB748;
 }
 
 #hero {
   margin-top: 1vh;
-  height: 85vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 1vh;
 }
 
 #hero #left {
@@ -186,7 +275,7 @@ a:hover {
   overflow: hidden;
 }
 
-#hero #right img {
+#hero #right video {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -315,103 +404,87 @@ a:hover {
   height: 70vh;
   width: 100%;
 }
-
+/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 40px 0;
-  font-family: 'Arial', sans-serif;
+  padding: 50px 0;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
-.left, .middle, .right {
-  flex: 1;
-  padding: 0 20px;
-}
-
-h2 {
-  font-size: 20px;
+.container h2 {
+  font-size: 1.5em;
   margin-bottom: 20px;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 10px;
 }
 
-p {
-  font-size: 14px;
+.container p {
+  font-size: 0.9em;
   line-height: 1.5;
-}
-
-form {
-  display: flex;
-  margin-top: 15px;
+  margin-bottom: 20px; /* Added margin bottom for spacing */
 }
 
 .input-group {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: column; /* Adjusted to column layout for better alignment */
 }
 
-input[type="email"] {
-  width: 100%;
+.input-group input[type="email"] {
+  width: 100%; /* Full width input */
   padding: 10px;
+  margin-bottom: 10px; /* Added margin bottom for spacing */
   border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
+  border-radius: 4px;
 }
 
-button {
-  background-color: #007bff;
+.input-group button {
+  background-color: #f44336;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
   transition: background-color 0.3s ease;
+  width: 100%; /* Full width button */
 }
 
-button:hover {
-  background-color: #0056b3;
+.input-group button:hover {
+  background-color: #e53935;
 }
 
-ul {
-  list-style: none;
+.middle ul,
+.right ul {
+  list-style-type: none;
   padding: 0;
 }
 
-li {
-  margin-bottom: 8px;
+.middle li,
+.right li {
+  margin-bottom: 10px;
 }
 
-a {
-  color: #fff;
+.middle a,
+.right a {
+  color: #aaa;
   text-decoration: none;
+  font-size: 0.9em;
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #007bff;
-  text-decoration: underline;
+.middle a:hover,
+.right a:hover {
+  color: #fff;
 }
-
 .testimonial-container:hover {
   border: 2px dotted grey;
 }
 
-
-
 #cards_1 {
-  height: 80%;
-  width: 70%;
+  height: 80vh;
+  width: 68vw;
   border: 2px solid black;
   border-radius: 15px;
   display: flex;
@@ -430,7 +503,6 @@ a:hover {
   border-radius: 10px;
 }
 #info{
-   
   font-weight: bolder;
 }
 #donate_btn{

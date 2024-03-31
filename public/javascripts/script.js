@@ -28,6 +28,7 @@ ScrollTrigger.scrollerProxy("#main", {
   }
 });
 
+
 var h1 = document.querySelectorAll('#page2 #scroll h1');
 
 let data = [
@@ -116,4 +117,5 @@ tl.to("#donate",{
     repeat: -1,  
     yoyo:true
 })
+
 
