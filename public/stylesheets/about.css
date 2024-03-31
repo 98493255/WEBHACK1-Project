@@ -70,7 +70,7 @@ html {
 
 #page2 {
     background-color: #edf2f4;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-image: url("./food2.jpg");
     background-size: cover;
@@ -80,7 +80,7 @@ html {
 
 #page3 {
     background-color: #FFFFFF;
-    height: 200vh;
+    height: 150vh;
     width: 100%;
 }
 
@@ -157,7 +157,7 @@ p {
 
 .card {
     width: 300px;
-    height: 500px;
+    height: 400px;
     perspective: 1600px;
     margin: 50px;
 }
