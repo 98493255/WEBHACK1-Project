@@ -45,6 +45,14 @@ html, body {
 #navpart-3 {
   display: flex;
   align-items: center;
+  gap: 2vw;
+}
+
+#navpart-3 img{
+  height: 4vh;
+  width: 2vw;
+  object-fit: cover;
+  object-position: center;
 }
 
 #nav h1 {
@@ -391,6 +399,8 @@ a:hover {
 .testimonial-container:hover {
   border: 2px dotted grey;
 }
+
+
 
 #cards_1 {
   height: 80%;

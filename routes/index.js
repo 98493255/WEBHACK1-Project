@@ -18,7 +18,7 @@ router.get('/feeding', function(req, res, next) {
 });
 
 router.get('/partner', function(req, res, next) {
-  res.render('index', { title: 'Partners' }); 
+  res.render('login'); 
 });
 
 router.get('/contact', function(req, res, next) {

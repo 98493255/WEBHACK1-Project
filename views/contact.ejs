@@ -14,20 +14,27 @@
 <div id="main">
 
 
-<div id="nav">
+  <div id="nav">
     <h1 onclick="redirectToHome()"><img style="height: 5vh; object-fit: cover; object-position: center; width: 13vw;margin-top: 2vh;" src="../images/logo.png" alt=""></h1>
     <div id="navpart-2">
-        <h1 id="home" onclick="redirectToHome()">Home</h1>
-        <h1 id="about" onclick="redirectToAbout()">About us</h1>
-        <h1 id="feeding" onclick="redirectToFeeding()">Awards and Recognitions</h1>
-        <h1 id="milestone" onclick="redirectToMilestone()">Milestones</h1>
-        <h1 id="partner" onclick="redirectToPartner()">Partner with Us</h1>
-        <h1 id="contact" onclick="redirectToContact()">Contact</h1>
+      <h1 id="home" onclick="redirectToHome()">Home</h1>
+      <h1 id="about" onclick="redirectToAbout()">About us</h1>
+      <h1 id="feeding" onclick="redirectToFeeding()"> Awards and Recognitions</h1>
+      <h1 id="milestone" onclick="redirectToMilestone()">Milestones</h1>
+      <h1 id="contact" onclick="redirectToContact()">Contact</h1>
     </div>
     <div id="navpart-3">
-        <button id="donate" onclick="redirectToDonate()"><i class="ri-heart-fill"></i>Donate</button>
+      <button
+        id="donate"
+        style="padding: 1vh 3vw; text-align: center; width: fit-content"
+        onclick="redirectToDonate()"
+      >
+        <i class="ri-heart-fill"></i>Donate
+      </button>
+      <img src="../images/login.png" onclick="redirectToPartner()">
+      <!-- <h1 id="partner" onclick="redirectToPartner()"></h1> -->
     </div>
-</div>
+  </div>
     <div class="container">
         <div class="connect">
             <h2>CONNECT WITH <span>FoodForward</span></h2>

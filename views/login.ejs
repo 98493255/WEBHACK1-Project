@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<link rel="stylesheet" href="../stylesheets/login.css">
+
+<body>
+  <!-- <div id="nav">
+    <h1 onclick="redirectToHome()"><img style="height: 5vh; object-fit: cover; object-position: center; width: 13vw;margin-top: 2vh;" src="../images/logo.png" alt=""></h1>
+    <div id="navpart-2">
+      <h1 id="home" onclick="redirectToHome()">Home</h1>
+      <h1 id="about" onclick="redirectToAbout()">About us</h1>
+      <h1 id="feeding" onclick="redirectToFeeding()"> Awards and Recognitions</h1>
+      <h1 id="milestone" onclick="redirectToMilestone()">Milestones</h1>
+      <h1 id="contact" onclick="redirectToContact()">Contact</h1>
+    </div>
+    <div id="navpart-3">
+      <button
+        id="donate"
+        style="padding: 1vh 3vw; text-align: center; width: fit-content"
+        onclick="redirectToDonate()"
+      >
+        <i class="ri-heart-fill"></i>Donate
+      </button>
+      <img src="../images/login.png" onclick="redirectToPartner()">
+      <!-- <h1 id="partner" onclick="redirectToPartner()"></h1> -->
+    <!-- </div>
+  </div>  -->
+  <div id="main">
+    <div class="modal">
+      <form class="form" action="">
+        <div class="banner"></div>
+        <label class="title">FoodForward <br>login </label>
+        <p class="description">Join "FoodForward" today! Log in to connect with like-minded individuals passionate about
+          ending food waste and hunger. Together, we can make a difference. </p>
+        <div class="tab-container">
+          <button class="tab tab--1" id="btn1">Login as an NGO</button>
+          <button class="tab tab--2" id="btn2">Login as donor</button>
+          <div class="indicator"></div>
+        </div>
+        <div id="cred">
+          <input type="text" name="" class="inp" placeholder="organisation name">
+          <input type="text" name="" class="inp" placeholder="phone number ">
+          <input type="text" name="" class="inp" placeholder="email">
+          <input type="text" name="" class="inp" placeholder="NGO registration number">
+          <input type="text" name="" class="inp" placeholder="Website (if available)">
+          <input type="text" name="" class="inp" placeholder="location">
+        </div>
+        <div class="benefits">
+          <span>What FoodForward offers</span>
+          <ul>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+                <rect fill="black" rx="8" height="16" width="16"></rect>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white"
+                  d="M5 8.5L7.5 10.5L11 6"></path>
+              </svg>
+              <span>Unlock access to a network of donors, volunteers, and resources dedicated to ending hunger.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="16" width="16">
+                <rect fill="black" rx="8" height="16" width="16"></rect>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="white"
+                  d="M5 8.5L7.5 10.5L11 6"></path>
+              </svg>
+              <span>community of like-minded NGOs committed to making a difference in the lives of others.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal--footer">
+          <label class="price">Join for a cause</label>
+          <button class="upgrade-btn">LOGIN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../javascripts/login.js"></script>
+</body>
+
+</html>
