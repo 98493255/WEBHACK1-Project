@@ -109,6 +109,6 @@ tl.from("#page3 .testimonial-container",{
         scrub: 1,
         // markers:true,
         start: "top 100%",
-        end: "top 40%"
-    }
+        end: "top 40%"
+}
 })
