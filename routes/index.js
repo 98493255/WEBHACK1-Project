@@ -14,7 +14,7 @@ router.get('/milestone', function(req, res, next) {
 });
 
 router.get('/feeding', function(req, res, next) {
-  res.render('index', { title: 'Feeding' }); 
+  res.render('awards', { title: 'Feeding' }); 
 });
 
 router.get('/partner', function(req, res, next) {
